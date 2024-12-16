@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+    color: #fff;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src:url(fonts/Raleway-VariableFont_wght.ttf);
+    color: #fff;
+    font-weight: 300;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button-order {
+    padding: 3px 15px;
+    color: #fff;
+    background-color: #292527;
+    border-radius: 8px;
+    border-width: 0.75px;
+    border-color: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+    border-width: 0.75px;
+}
+
+body {
+    font-family: 'Raleway';
+    padding: 10px 100px;
+    background-color: #000;
+
+}
+
+.nav {
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 0.75px solid #fff;
+}
+
+.list-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+
+.page-3 {
+    height: 890px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.profile {
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 90px;
+}
+
+.image {
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.ul_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ul_2 {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.information {
+    width: 70%;
+    background-image: url(img/02.png);
+    background-size: cover;
+}
+
+h2 {
+    margin-top: 100px;
+    padding-left: 50px;
+}
+
+.remindes {
+    padding-left: 50px;
+
+}
+
+.remind-1 {
+    padding: 15px 20px;
+    margin-top: 15px;
+    width: 700px;
+    height: 70px;
+    background-color: #737374;
+    border-radius: 8px;
+}
+
+.remind-2 {
+    padding: 15px 20px;
+    margin-top: 15px;
+    width: 700px;
+    height: 70px;
+    background-color: #737374;
+    border-radius: 8px;
+}
+
+.confirm {
+    margin-top: 7px;
+    display: flex;
+    flex-direction:row;
+    gap: 15px;
+}
+
+.exit {
+    margin-top: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-nav :first-child {
+    padding-right: 5px;
+}
+
+.footer-nav :last-child {
+    padding: 5px;
+}
+
+.footer-button {
+    margin: auto;
+    border: none;
+    background-color: #000;
+}
+
+.footer-button:hover {
+    border: none;
+    border-color: #000;
+    background-color: #292527;
+    color: #000;
+    transition: all .1s linear;
+}
+
+@media (max-width: 1920px) {
+    h1 {
+        font-size: 72px;
+        font-weight: medium;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p, a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 20px;
+        font-weight: medium;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    p, a {
+        font-size: 12px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        margin-left: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .form {
+        margin-left: 50px;
+    }
+
+    .remindes {
+        width: 80%;
+        padding: 5px;
+    }
+
+    .remind-1 {
+        width: 600px;
+    }
+
+    .remind-2 {
+        width: 600px;
+    }
+
+    .exit {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 30px;
+        font-weight: medium;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    p, a {
+        font-size: 12px;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+        margin-left: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .photo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .form {
+        display: flex;
+
+    }
+
+    .remind-1 {
+        width: 400px;
+    }
+
+    .remind-2 {
+        width: 400px;
+    }
+
+    .exit {
+        margin-top: 200px;
+    }
+}

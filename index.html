@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="мясной двор, ресторан мясной двор, ресторан пенза, мясной двор доставка, мясной двор меню, бронирование столика мясной двор, мясной ресторан">  
+    <meta description = "Ресторан "Мясной двор" - удовольствие для настоящий ценителей. Приходите по адресу: г. Пенза, улю Московская 85а и попробуйте настоящую мясную кухню и вдохновитесь интерьером нашего ресторана!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/афмшсщт.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The meat yard</title>
+</head>
+<body>
+
+    <a href="#" id="top">Наверх</a>
+
+
+    <div class="popup">
+        <div class="contnt">
+            <span class="close-button">&times;</span>
+            <h2>Вход</h2>
+            <form>
+                <div class="wrapp">
+                    <div class="form-row">
+                        <label for="login">Логин:</label>
+                        <input type="text" id="login">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password">
+                    </div>         
+                    <button type="button" class="button"><a href="profile.html">Войти</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <header class="header">
+        <nav>
+            <ul class="nav">
+                <li class="nav-1"><a href="#"><img src="img/logo.svg" alt="logo"></a></li>
+                <div class="list-nav">
+                    <li class="nav-2"><a href="basket.html">Корзина</a></li>
+                    <li class="nav-3"><a href="list.html">Личный кабинет</a></li>
+                    <li class="nav-4"><a href="register.html">Регистрация</a></li>
+                    <li><button class="open-popup" >Вход</button>
+                        
+                        <script src="index.js"></script>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        
+        <div class="screen-1">
+            <h1>Мясной двор</h1>
+            <h3>УДОВОЛЬСТВИЕ ДЛЯ НАСТОЯЩИХ ЦЕНИТЕЛЕЙ</h3>
+            <h3>МЯСНОЙ РЕСТОРАН НА МОСКОВСКОЙ, 85А</h3>
+            <button type="submit" class="table"> Забронивать стол
+                <script src="scroll.js"></script>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="list-menu">
+            <h2>Меню</h2>
+            <section>
+                <script src="menu.js"></script>
+                <div class="menu">
+                    <a onclick="showService('snacks')" class="tab-button">Закуски</a>
+                    <a onclick="showService('salads')" class="tab-button">Салаты</a>
+                    <a onclick="showService('burgers')" class="tab-button">Бургеры</a>
+                    <a onclick="showService('sausages')" class="tab-button">Колбасный цех</a>
+                    <a onclick="showService('drinks')" class="tab-button">Напитки</a>
+                    <a onclick="showService('deserts')" class="tab-button">Десерты</a>
+                </div>
+
+                <div id="snacks" class="meal-section">
+                    <div class="meal">
+                        <!-- <div class="text-img"><p><a href="basket.html">Татаки из говядины</a></p></div> -->
+                        <p title="img/fish.png">Татаки из говядины</p>
+                        <span>480 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Тар-тар из лосося</a></p></div>
+                        <span>580 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Тар-тар из тунца</a></p></div>
+                        <span>550 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Тар-тар из говядины</a></p></div>
+                        <span>550 р.</span>
+                    </div>
+                </div>
+
+                <div id="salads" class="meal-section">
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Теплый салат с говядиной</a></p></div>
+                        <span>580 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Салат с осьминогом</a></p></div>
+                        <span>720 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Салат с камчатским крабом</a></p></div>
+                        <span>780 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Руккола с мореподуктами</a></p></div>
+                        <span>670 р.</span>
+                    </div>
+                </div>
+
+                <div id="burgers" class="meal-section">
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Челентано</a></p></div>
+                        <span>670 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Мистер Поркер</a></p></div>
+                        <span>480 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Тундра</a></p></div>
+                        <span>640 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p>Сантьяго</p></div>
+                        <span>580 р.</span>
+                    </div>
+                </div>
+
+                <div id="sausages" class="meal-section">
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Свиные колбаски</a></p></div>
+                        <span>740 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Куриные колбаски</a></p></div>
+                        <span>730 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Колбаски с моцареллой</a></p></div>
+                        <span>790 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Колбаски по-техасски</a></p></div>
+                        <span>800 р.</span>
+                    </div>
+                </div>
+
+                <div id="drinks" class="meal-section">
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Смородина-миндаль</a></p></div>
+                        <span>250 / 720 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Яблоко-маракуйа</a></p></div>
+                        <span>850 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Манго-мандарин</a></p></div>
+                        <span>850 р.</span>
+                    </div>
+                    <div class="meal">
+                        <p><a href="basket.html">Малина-имбирь</a></p>
+                        <span>250 / 720 р.</span>
+                    </div>
+                </div>
+
+                <div id="deserts" class="meal-section">
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Крем-брюле</a></p></div>
+                        <span>420 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Миндальная вафля</a></p></div>
+                        <span>320 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Медовое пирожное</a></p></div>
+                        <span>360 р.</span>
+                    </div>
+                    <div class="meal">
+                        <div class="text-img"><p><a href="basket.html">Шоколадный торт</a></p></div>
+                        <span>350 р.</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="form">
+            <h2 class="form-h">Для бронирования заполните форму,<br> мы Вам перезвоним:</h2>
+            <form>
+                <ul class="wrapper">
+                    <li class="form-row">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name">
+                    </li>
+                    <li class="form-row">
+                        <label for="phone">Телефон:</label>
+                        <input type="phone" id="phone">
+                    </li>
+                    <li class="form-row">
+                        <label for="date">Дата:</label>
+                        <input type="date" id="date">
+                    </li>
+                    <li class="form-row">
+                        <button type="submit" class="button">Оставить заявку</button>
+                        <script></script>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="reviews">
+            <h2>Отзывы</h2>
+            <div class="wrapper-reviews">
+                <input type="radio" name="point" id="slide1" checked>
+                <input type="radio" name="point" id="slide2">
+                <input type="radio" name="point" id="slide3">
+                <div class="slider">
+                    <div class="slides slide1"><h3>Алексей</h3><br><p class="reviews-text">Шикарнейший ресторан, прекрасная кухня, потрясающий сервис. Уникальные виды! Я не рекомендую я просто настаиваю вам попасть сюда! Лучше по записи бронировать столик. Единственный минус это вечная пробка у гардиробной. Курильщиков ждет очень приятный сюрприз в виде сигарной. <br> Если вас не впечатлит шикарные изысканные блюда от реально профессионального шеф повара с видом на зимний дворец тогда я не знаю что вам вообще делать в Санкт- Питербурге.Корюшка это фирменное блюдо данного заведения настаиваю.Персонал кипит живет своей работой официант в этот вечер у нас был супер мега пупер с прекрасным чувством юмора и отлично справлялся со всем.Для тех кто на своей машине не бойтесь подъезжаете к шлагбауму вам дают талон едите по мосту ставите машину на парковке в ресторане ставите печать с парковки вас довезут до самого ресторана и так же назад. <br>
+                        Шикарнейшее место рекомендую даже настаиваю.</p></div>
+                    <div class="slides slide2"><h3>Наталья</h3><br><p class="reviews-text">Одно из немногих действительно «вкусных» мест на Горьковской. Прекрасно посидели компанией из 6 человек. Еда отличная! Особенно понравились кутабы с сыром — это просто чудо. Маковый торт с мороженым просто таял во рту. Чай Банан-маракуйя также рекомендую — очень необычное сочетание. Когда мы пришли, в ресторане был просто аншлаг, но для нашей компании сразу же нашёлся столик, что было весьма приятно. Заценили также наличие полотенец и крема для рук Levrana в ванной. Но не обошлось и без минусов: очень громкая музыка в зале, разговаривать было просто невозможно. Попросили убавить музыку — убавили совсем чуть-чуть (не помогло). Также совсем не понравилась довольно суетная атмосфера и толпы людей, как на вокзале. К умывальнику в ванной реально очередь стояла:)) Официанты носились в спешке, проходящая мимо сотрудница едва не опрокинула на меня поднос с едой. Но в целом! Если самое главное для вас — это вкусно покушать после (или во время) посещения Петропавловки, наслаждаясь прекрасными видами на Неву — тогда заведение вам точно подойдёт!</p></div>
+                    <div class="slides slide3"><h3>Мария</h3><br><p class="reviews-text">Отличное заведение. Шикарный панорамный вид на реку. Приятная атмосфера, очень стильное оформление. Очень вкусная корюшка в любом виде, замечательное пиво. Вежливый персонал на входе, но вот официант нам попался не совсем корректный. Обслуживал плохо, с высока, пытался противоречить, долго выносил блюда, но по нашей просьбе его заменили на замечательную девочку, которая сгладила неприятное впечатление. В целом остались довольны. Но столик лучше заранее бронировать, так как место очень популярное.</p></div>
+                </div>	
+                <div class="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-button">
+            <button class="footer-button"><a href="https://yandex.ru/maps/?um=constructor%3A05b98e50b0bee91751b8d377d27cc6c48c75e325699578e670dd1de2702f1d24&source=constructorLink"><img src="img/map.svg" alt="map"></a></button>
+            <button class="footer-button"><a href="https://vk.com/feed"><img src="img/vk.svg" alt="vk"></button>
+            <button class="footer-button"><a href="https://web.telegram.org/k/"><img src="img/telegram.svg" alt="tg"></button>
+            <button class="footer-button"><a href="about:blank"><img src="img/twitter.svg" alt="tw"></button>
+        </div>
+        <div class="footer-nav">
+            <a href="#">Главная</a>
+            <a href="basket.html">Корзина</a>
+            <a href="profile.html">Личный кабинет</a>
+        </div>
+    </footer>
+</body>
+</html>

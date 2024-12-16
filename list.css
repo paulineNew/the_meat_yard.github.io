@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+    color: #fff;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src:url(fonts/Raleway-VariableFont_wght.ttf);
+    color: #fff;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all .3s linear;
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: transparent; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+a .button {
+    color: #000;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    background-image: url(img/02.png);
+    background-size: cover; 
+}
+
+.close {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.page-3 {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    max-width: 170px;
+    color: #fff;
+    background-color: #292527;
+    border-radius: 8px;
+    border-width: 0.75px;
+    border-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.button::hover {
+    /* background-color: #fff; */
+    color: #000;
+    transition: all .1s linear;
+}
+
+
+

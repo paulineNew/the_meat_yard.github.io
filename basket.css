@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+    color: #fff;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src:url(fonts/Raleway-VariableFont_wght.ttf);
+    color: #fff;
+    font-weight: 300;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button-order {
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #292527;
+    border-radius: 8px;
+    border-width: 0.75px;
+    border-color: #fff;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+    border-width: 0.75px;
+}
+
+body {
+    font-family: 'Raleway';
+    padding: 10px 100px;
+    background-color: #000;
+
+}
+
+.navigation {
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 0.75px solid #fff;
+}
+
+.list-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+
+.page_2 {
+    /* height: 890px; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+}
+
+.basket {
+    width: 80%;
+    background-image: url(img/02.png);
+    background-size: cover; 
+}
+
+
+.orders {
+    margin-top: 188px;
+    margin-left: 233px;
+}
+
+.list {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: normal;
+}
+
+.list-1_1, .list-1_2, .list-1_3, .list-1_4 {
+    /* margin-top: 38px; */
+    margin-left: 233px;
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.list-1_1 p, .list-1_2 p, .list-1_3 p, .list-1_4 p {
+    margin-right: 10px;
+}
+
+.order {
+    margin-top: 183px;
+    position: static;
+}
+
+.text label {
+    color: #fff;
+}
+
+.text input {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+}   
+
+.text > input,
+.text > button {
+    padding: .5em;
+}   
+
+.address {
+    margin-top: 39px;
+    margin-bottom: 13px;
+}
+
+.address input {
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.map {
+    width: 100px;
+    height: 50px;
+}
+
+.pays {
+    margin-top: 37px;
+}
+
+.person {
+    margin-top: 37px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.counter {
+    height: auto;
+    margin-top: 20px; 
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: -130px;
+}
+
+.counter_1, .counter_2, .counter_3, .counter_4 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+}
+
+input[type="radio"]:checked+span {
+    border-bottom: 1px dotted #fff;
+}
+
+#increment-btn,
+#decrement-btn,
+#reset {
+    font-size: 40px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+    margin: 20px;
+}
+
+#increment-btn{
+    margin-top: 25px;
+}
+
+#reset {
+    font-size: 20px;
+}
+
+#counter-value {
+    background-color: #000;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte {
+    margin-top: 17px;
+}
+
+.form_radio {
+	margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #292527;
+    border: .75px solid #fff;
+    border-radius: 50%;
+}
+
+.form_radio label:hover:before {
+	filter: brightness(120%);
+	background-color: #fff;
+    border: .75px solid #fff
+}
+
+.form_radio label:active:before {
+	filter: brightness(120%);
+	background-color: #fff;
+    border: .75px solid #fff
+}
+
+.form_radio label:checked {
+    
+	filter: brightness(120%);
+	background-color: #fff;
+    border: .75px solid #fff
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    max-width: 170px;
+    color: #fff;
+    background-color: #292527;
+    border-radius: 8px;
+    border-width: 0.75px;
+    border-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.button::hover {
+    color: #000;
+    transition: all .1s linear;
+}
+
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-nav :first-child {
+    padding-right: 5px;
+}
+
+.footer-nav :last-child {
+    padding: 5px;
+}
+
+.footer-button {
+    margin: auto;
+    border: none;
+    background-color: #000;
+}
+
+.footer-button:hover {
+    border: none;
+    border-color: #000;
+    background-color: #292527;
+    color: #000;
+    transition: all .1s linear;
+}
+
+@media (max-width: 1920px) {
+    h1 {
+        font-size: 72px;
+        font-weight: medium;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p, a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1300px) {
+    h1 {
+        font-size: 20px;
+        font-weight: medium;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    p, a {
+        font-size: 12px;
+    }
+
+    body {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .basket {
+        width: 900px;
+    }
+
+    .list-1_1, .list-1_2, .list-1_3, .list-1_4 {
+        width: 800px;
+        margin-left: 40px;
+        margin-right: -200px;
+        display: flex;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .order {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .map {
+        width: 100px;
+        height: 50px;
+    }
+
+    /* .container {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .counter {
+        margin-left: -100px;
+    }
+
+}
+
+@media (max-width: 970px) {
+    h1 {
+        font-size: 20px;
+        font-weight: medium;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    p, a {
+        font-size: 12px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav{
+        margin: 0;
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+    .page_2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .basket {
+        margin-left: 0;
+        width: 400px;
+    }
+
+    .order{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map {
+        width: 100px;
+        height: 50px;
+    }
+}

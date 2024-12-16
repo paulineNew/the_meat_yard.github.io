@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src:url(fonts/Raleway-VariableFont_wght.ttf);
+    color: #fff;
+    font-weight: 300;
+}
+
+* {
+    font-family: 'Raleway';
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+    color: #fff;
+    font-weight: 300;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: all .3s linear;
+}
+
+#top {
+    position: fixed;
+    right: 5%;
+    top: 85%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all .3s linear;
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: transparent; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.table-a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    min-width: 100%;
+}
+
+
+body {
+    font-family: 'Raleway';
+    padding: 10px 100px;
+    position: relative;
+    background-color: #000;
+
+}
+header {
+    height: 950px;
+    width: 100%;
+    background-image: url(img/01.png);
+    background-size: auto; 
+} 
+
+.nav {
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 0.75px solid #fff;
+}
+
+.list-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+
+.open-popup {
+    background-color: transparent;
+    border: none;
+    font-size: medium;
+    color: #fff;
+    cursor: pointer;
+}
+
+.open-popup:hover {    
+    text-decoration: underline;
+}
+
+.open-popup:active {
+    text-decoration: underline;
+}
+
+.popup {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    justify-content: center;
+}        
+
+.close-button {
+    position: absolute;
+    right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.contnt {
+    background-color: #000; 
+    padding: 50px;
+    border-radius: 5px; 
+    
+}
+
+.wrapp> button{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #292527;
+    border-radius: 8px;
+    border-width: 0.75px;
+    border-color: #fff;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.screen-1{
+    margin-top: 360px;
+    margin-left: 100px;
+}
+
+h1{
+    font-size: 83px;
+}
+
+.table {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #292527;
+    border-radius: 12px;
+    border-width: 0.75px;
+    border-color: #fff;
+}
+
+.table:hover {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    transition: all .1s linear;
+}
+
+h2 {
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+    margin: 20px 0;
+    background-image: url(img/02.png);
+    background-size: auto; 
+}
+
+.tab-button {
+    padding: 10px 15px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.meal-section {
+    display: none;
+    justify-content: space-between;
+    padding: 50px 20px;
+    margin: 10px auto 0;
+    width: 60%;
+    background-image: url(img/02.png);
+}
+
+.meal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #fff;
+}
+
+.text-img {
+    position: relative;
+}
+
+.text-img::before {
+    content: url('img/fish.png'); /* Путь к изображению */
+    position: absolute;
+    top: 0;
+    right: 0; /* Положение картинки относительно текста */
+    opacity: 0; /* Картинка невидима по умолчанию */
+    transition: opacity 0.3s ease; /* Плавное появление картинки */
+}
+
+.text-img:hover ::before {
+    opacity: 1;
+}
+
+.form {
+    width: 100%;
+    height: 950px;
+    display: grid;
+    justify-content: center;
+    background-image: url(img/03.png);
+    background-size: auto; 
+}
+
+.form-h {
+    margin-top: 300px;
+    text-align: center;
+}
+
+.wrapper {
+    margin-top: -300px;
+    text-align: center;
+    min-width: 500px;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+
+.form-row > label {
+    padding: .5em .7em .5em 0;
+    flex: 1;
+}
+
+.form-row > input {
+    flex: 2;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}   
+
+.form-row > input,
+.form-row > button {
+    padding: .5em;
+}   
+
+.form-row > button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #292527;
+    border-radius: 8px;
+    border-width: 0.75px;
+    border-color: #fff;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all .1s linear;
+}
+
+.reviews {
+    text-align: center;
+    margin-top: -200px;
+}
+
+.wrapper-reviews {
+    height: 356px;
+	margin: 100px auto 0;
+	position: relative;
+	max-width: 800px; 
+    position: relative;
+}
+
+.slider {
+	background-color: #000;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.wrapper-reviews > input {
+	display: none;
+}
+
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+
+.wrapper-reviews .controls {
+	display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.wrapper-reviews label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper-reviews label:after {
+	border: 2px solid #fff;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.wrapper-reviews label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+	background: #000;
+}
+
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+
+    background-color: #292527;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3{
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+h3 {
+    text-align-last: left;
+    font-style: bold;
+}
+
+.reviews-text {
+    text-align: left;
+}
+
+.footer {
+    margin: 100px auto 0 ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-nav :first-child {
+    padding-right: 5px;
+}
+
+.footer-nav :last-child {
+    padding: 5px;
+}
+
+.footer-button {
+    border: none;
+    background-color: #000;
+}
+
+.footer-button:hover {
+    border: none;
+    border-color: #000;
+    background-color: #292527;
+    color: #000;
+    transition: all .1s linear;
+}
+
+@media (max-width: 1920px) {
+    h1 {
+        font-size: 72px;
+        font-weight: medium;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p, a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 20px;
+        font-weight: medium;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    p, a {
+        font-size: 12px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 30px;
+        font-weight: medium;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    p, a {
+        font-size: 12px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .screen-1 {
+        width: 200px;
+    }
+}
